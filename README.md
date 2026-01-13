@@ -6,14 +6,49 @@ The QC process is divided into Phase One (Physical) and Phase Two (Functional/Fi
 
 ## What's Included
 
-- `ESP32_QC_USB_Serial_Check`: USB-to-Serial communication test.
 - `Blink_LED`: LED and basic GPIO checks.
 - `ESP32_QC_WIFI_AP`: Wi-Fi Access Point mode test.
 - `ESP32_QC_WIFI_STA`: Wi-Fi Station mode test.
 - `ESP32_QC_Bluetooth_Android`: Bluetooth validation by Android pairing.
 - `ESP32_QC_Bluetooth_IOS`: Bluetooth validation by iOS pairing.
 
-## 
+## QC Phases Overview
+  ### Phase 1: Physical and Power Checks
+  - Board condition and enclosure inspection
+  - USB port connectivity
+  - Power-on LED behavior
+  - GPIO pins validation
+  - Button click test
+
+  ### Phase 2: Functional & Connectivity Checks
+  -Wi-Fi (Access Point & Station mode)
+  -Bluetooth (Classic / BLE) testing using mobile devices
+
+  To run the firmware tests (Phase Two), you must set up your software environment. We recommend the Arduino IDE due to its ease of use.
+
+## Setting up the Arduino IDE
+
+1. Install Arduino IDE
+   - Download and install the latest Arduino IDE for your OS (Windows, macOS or Linux) from:
+   https://www.arduino.cc/en/software
+2. Add ESP32 Board Support
+   - Open Arduino IDE and go to File > Preferences.
+   - In the "Additional Boards Manager URLs" field, paste the following link:
+https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+3. Install ESP32 Board Support
+   - Go to Tools > Board > Boards Manager.
+   - Search for "esp32".
+   - Install the "esp32 by Espressif Systems" package
+4. Select Board & Port
+   - Board: Go to Tools > Board > ESP Arduino > ESP32 Dev Module
+   - Port: Go to Tools > Port and select the COM/USB port where ESP32 is connected
+   - Upload Speed: 921600 (recommended) or 115200
+   
+## USB Driver Installation
+If your computer does not recognize the board (no COM port appears), you likely need to install the USB-to-UART bridge driver.
+CP210x Driver: Download from Silicon Labs - https://www.silabs.com/software-and-tools/usb-to-uart-bridge-vcp-drivers (Common for DevKit V1/DOIT boards).
+Tip: If you are unsure which chip your board uses, look at the small square black chip near the USB port. The text on it will usually say CP2102 or CP2104.
+   
 
 ## Prerequisites
 
