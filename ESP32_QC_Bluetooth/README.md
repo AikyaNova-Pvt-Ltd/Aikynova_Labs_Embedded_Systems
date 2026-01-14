@@ -17,7 +17,8 @@ Before starting, please install the appropriate application for your testing dev
 | **Android** | **Serial Bluetooth Terminal** | Kai Morich | Tests Bluetooth Classic (Serial Port Profile) |
 | **iOS** | **LightBlue®** | Punch Through | Tests Bluetooth Low Energy (BLE) |
 
-<img width="936" height="973" alt="App" src="https://github.com/user-attachments/assets/91e0ba9c-c455-485e-bd74-e80ea8b0fa97" />
+<img width="473" height="491" alt="App" src="https://github.com/user-attachments/assets/3fe2d9fa-bead-4b60-8611-a4b3031d90f3" />
+
 
 
 ---
@@ -84,4 +85,5 @@ The board passes the Bluetooth QC check if:
 * **"Connection Failed" on Android:** Ensure you unpair the device in Android Settings and re-pair it before opening the app.
 * **Device not found on iOS:** Ensure you are using the *iOS/BLE* firmware. The Android firmware (Classic Bluetooth) will **not** show up on an iPhone.
 * **Brownout / Reset:** If the board restarts when you try to connect, the USB port may not be supplying enough current. Try a different USB port or cable.
+
 
