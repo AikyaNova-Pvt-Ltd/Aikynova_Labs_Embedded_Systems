@@ -18,6 +18,10 @@ The ESP32 is a highly integrated, low-cost system-on-chip (SoC) developed by Esp
 The ESP32 DevKit is a development and evaluation board built around the ESP32 SoC. It exposes the ESP32’s GPIOs, power rails and communication interfaces through standard headers, enabling rapid prototyping, firmware development and hardware validation.
 AikyaNova Labs uses ESP32 DevKit boards as the reference platform for QC testing, ensuring consistent and repeatable results across batches.
 
+<p align="center">
+  <img src="Images/ESP32 DevKit.jpg" width="500" alt="Preferences">
+</p>
+
 ### <ins>📊 ESP32 Technical Specifications</ins>
 
   **🧠 Processor & Architecture**
