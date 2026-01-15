@@ -53,6 +53,23 @@ AikyaNova Labs uses ESP32 DevKit boards as the reference platform for QC testing
   <img src="ESP32 Pinout Diagram.png" width="600" alt="ESP32 Components">
 </p>
 
+The ESP32 DevKit V1 exposes a variety of GPIOs and special peripherals. Below is a quick reference for the most commonly used pins:
+
+| Function | Description | Typical Pins (Default) |
+| :--- | :--- | :--- |
+| **Power** | Power Supply Rails | **VIN** (5V Input), **3.3V** (Output), **GND** |
+| **ADC** | Analog to Digital Converter | GPIO 32, 33, 34, 35, 36 (VP), 39 (VN) |
+| **DAC** | Digital to Analog Converter | **DAC1** (GPIO 25), **DAC2** (GPIO 26) |
+| **I²C** | I2C Bus (Sensors/Displays) | **SDA** (GPIO 21), **SCL** (GPIO 22) |
+| **SPI** | SPI Bus (SD Cards/Screens) | **MOSI** (GPIO 23), **MISO** (GPIO 19), **CLK** (GPIO 18), **CS** (GPIO 5) |
+| **UART** | Serial Communication | **TX0** (GPIO 1), **RX0** (GPIO 3) |
+| **PWM** | Pulse Width Modulation | All output GPIOs (Software configurable) |
+
+> **⚠️ Important Pin Notes:**
+> 1.  **Input Only GPIOs:** GPIOs **34, 35, 36 (VP), and 39 (VN)** do not have internal pull-ups and cannot be used as outputs.
+> 2.  **ADC2 vs Wi-Fi:** Do not use ADC2 pins (GPIO 0, 2, 4, 12-15, 25-27) for analog readings when Wi-Fi is active; they will not work. Use ADC1 pins instead.
+> 3.  **Boot Strapping:** GPIO **0, 2, 5, 12, and 15** determine boot mode. Avoid connecting external components that pull these pins High/Low during power-up to prevent boot failures.
+
 ## 📋 Quality Control (QC) Overview
 
 AikyaNova Labs follows a repeatable and customer-verifiable QC process to ensure ESP32 boards meet electrical, functional, and wireless performance expectations.
