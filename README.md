@@ -91,7 +91,7 @@ To run the firmware tests (Phase 2), you must set up your software environment. 
    - Install the driver softwares.
   
 <p align="center">
-  <img src="Images/IDE Installation.png" width="550" alt="Installation">
+  <img src="Images/IDE Installation.png" width="600" alt="Installation">
 </p>
 
 2. **Add ESP32 Board Support** 🔗
@@ -100,7 +100,7 @@ To run the firmware tests (Phase 2), you must set up your software environment. 
 `https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json`
 
 <p align="center">
-  <img src="Images/IDE Preferences.png" width="550" alt="Preferences">
+  <img src="Images/IDE Preferences.png" width="600" alt="Preferences">
 </p>
 
 3. **Install ESP32 Board Support** 📦
@@ -109,16 +109,16 @@ To run the firmware tests (Phase 2), you must set up your software environment. 
    - Install the "esp32 by Espressif Systems" package
   
 <p align="center">
-  <img src="Images/IDE Board Manager.png" width="550" alt="Board Manager">
+  <img src="Images/IDE Board Manager.png" width="600" alt="Board Manager">
     &nbsp; &nbsp;
-  <img src="Images/IDE Board Installation.png" width="550" alt="Board Installation">
+  <img src="Images/IDE Board Installation.png" width="600" alt="Board Installation">
 </p>
     
 4. **Select Board & Port** 🔌
-   - Board: Go to Tools > Board > ESP Arduino > ESP32 Dev Module
+   - Board: Go to Tools > Board > ESP Arduino/esp3 > ESP32 Dev Module
      
 <p align="center">
-  <img src="Images/IDE Tools.png" width="550" alt="Tools">
+  <img src="Images/IDE Tools.png" width="600" alt="Tools">
 </p>
 
    - Port: Go to Tools > Port and select the COM/USB port where ESP32 is connected
@@ -127,6 +127,11 @@ To run the firmware tests (Phase 2), you must set up your software environment. 
 ## 🔌 USB Driver Installation
 If your computer does not recognize the board (no COM port appears), you likely need to install the USB-to-UART bridge driver.
 - **CP210x Driver:** Download from [Silicon Labs](https://www.silabs.com/software-and-tools/usb-to-uart-bridge-vcp-drivers) (Common for DevKit V1/DOIT boards).
+
+<p align="center">
+  <img src="Images/CP210x Driver Installation.png" width="600" alt="CP210x">
+</p>
+
 Tip: If you are unsure which chip your board uses, look at the small square black chip near the USB port. The text on it will usually say CP2102 or CP2104.
 
 ## 📂 Included Test Firmware
