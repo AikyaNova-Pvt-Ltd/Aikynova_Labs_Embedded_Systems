@@ -10,7 +10,7 @@ The QC process is divided into **Phase One** (Physical) and **Phase Two** (Funct
 The ESP32 is a highly integrated, low-cost system-on-chip (SoC) developed by Espressif Systems, combining a dual-core 32-bit microcontroller with built-in 2.4 GHz Wi-Fi and Bluetooth (Classic + BLE) connectivity. Clocked up to 240 MHz, it offers strong processing capability, flexible GPIO multiplexing and a rich set of peripherals including ADC, DAC, PWM, UART, SPI, I²C and CAN. Multiple low-power modes enable energy-efficient designs, while hardware security features such as secure boot, flash encryption and cryptographic acceleration make the ESP32 suitable for both prototyping and production-grade embedded and IoT applications.
 
 <p align="center">
-  <img src="ESP32.jpg" width="400" alt="ESP32 Components">
+  <img src="Images/ESP32.jpg" width="400" alt="ESP32 Components">
 </p>
 
 ## 🎛️ ESP32 DevKit Overview
@@ -50,7 +50,7 @@ AikyaNova Labs uses ESP32 DevKit boards as the reference platform for QC testing
 ## 📍 ESP32 DevKit Pinout
 
 <p align="center">
-  <img src="ESP32 Pinout Diagram.png" width="600" alt="ESP32 Components">
+  <img src="Images/ESP32 Pinout Diagram.png" width="600" alt="ESP32 Components">
 </p>
 
 The ESP32 DevKit V1 exposes a variety of GPIOs and special peripherals. Below is a quick reference for the most commonly used pins:
@@ -87,6 +87,12 @@ To run the firmware tests (Phase 2), you must set up your software environment. 
 1. **Install Arduino IDE** 📥
    - Download and install the latest Arduino IDE for your OS (Windows, macOS or Linux) from:
    https://www.arduino.cc/en/software
+   - Agree to the terms and conditions and install in the default loaction. Click on Finish to complete the installation process.
+   - Install the driver softwares.
+  
+<p align="center">
+  <img src="Images/IDE Installation.png" width="350" alt="Installation">
+</p>
 
 2. **Add ESP32 Board Support** 🔗
    - Open Arduino IDE and go to File > Preferences.
