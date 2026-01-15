@@ -1,6 +1,6 @@
 # 🛠️ AikyaNova Labs Embedded Systems - ESP32 QC Testing
 
-This repository provides AikyaNova Lab’s standardized Quality Control (QC) test firmware for ESP32 development boards. These tests are used internally by AikyaNova Labs during hardware validation and incoming quality control (IQC), and are also shared with customers so they can independently verify the ESP32 hardware they receive.
+This repository provides AikyaNova Lab’s standardized Quality Control (QC) test firmware for ESP32 development boards. These tests are used internally by AikyaNova Labs during hardware validation and incoming quality control (IQC) and are also shared with customers so they can independently verify the ESP32 hardware they receive.
 
 The QC process is divided into **Phase One** (Physical) and **Phase Two** (Functional/Firmware).
 
@@ -15,7 +15,7 @@ The ESP32 is a highly integrated, low-cost system-on-chip (SoC) developed by Esp
 
 ## 🎛️ ESP32 DevKit Overview
 
-The ESP32 DevKit is a development and evaluation board built around the ESP32 SoC. It exposes the ESP32’s GPIOs, power rails, and communication interfaces through standard headers, enabling rapid prototyping, firmware development and hardware validation.
+The ESP32 DevKit is a development and evaluation board built around the ESP32 SoC. It exposes the ESP32’s GPIOs, power rails and communication interfaces through standard headers, enabling rapid prototyping, firmware development and hardware validation.
 AikyaNova Labs uses ESP32 DevKit boards as the reference platform for QC testing, ensuring consistent and repeatable results across batches.
 
 ### <ins>📊 ESP32 Technical Specifications</ins>
@@ -72,10 +72,10 @@ The ESP32 DevKit V1 exposes a variety of GPIOs and special peripherals. Below is
 
 ## 📋 Quality Control (QC) Overview
 
-AikyaNova Labs follows a repeatable and customer-verifiable QC process to ensure ESP32 boards meet electrical, functional, and wireless performance expectations.
+AikyaNova Labs follows a repeatable and customer-verifiable QC process to ensure ESP32 boards meet electrical, functional and wireless performance expectations.
 
-Incoming QC (IQC) verifies physical condition, connectors, power integrity, and basic electrical behavior.
-Functional QC validates firmware upload, USB-serial communication, GPIO operation, Wi-Fi, and Bluetooth functionality using standardized test firmware.
+Incoming QC (IQC) verifies physical condition, connectors, power integrity and basic electrical behavior.
+Functional QC validates firmware upload, USB-serial communication, GPIO operation, Wi-Fi and Bluetooth functionality using standardized test firmware.
 
 - **Phase 1:** Physical and Power Checks 🔍
 - **Phase 2:** Functional & Connectivity Checks 📶
