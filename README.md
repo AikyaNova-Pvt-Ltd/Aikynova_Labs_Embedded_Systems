@@ -125,12 +125,7 @@ To run the firmware tests (Phase 2), you must set up your software environment. 
   <img src="Images/IDE Tools.png" width="600" alt="Tools">
 </p>
 
-   - Port: Go to Tools > Port and select the COM/USB port where ESP32 is connected
-
-<p align="center">
-  <img src="Images/IDE Port.png" width="600" alt="Port">
-</p>
-  
+   - Port: Go to Tools > Port and select the COM/USB port where ESP32 is connected 
    - Upload Speed: 921600 (recommended) or 115200
    
 ## 🔌 USB Driver Installation
@@ -138,7 +133,7 @@ If your computer does not recognize the board (no COM port appears), you likely 
 - **CP210x Driver:** Download from [Silicon Labs](https://www.silabs.com/software-and-tools/usb-to-uart-bridge-vcp-drivers) (Common for DevKit V1/DOIT boards).
 
 <p align="center">
-  <img src="Images/CP210x Driver Installation.png" width="600" alt="CP210x">
+  <img src="Images/CP210x Driver Installation.png" width="450" alt="CP210x">
 </p>
 
 Tip: If you are unsure which chip your board uses, look at the small square black chip near the USB port. The text on it will usually say CP2102 or CP2104.
