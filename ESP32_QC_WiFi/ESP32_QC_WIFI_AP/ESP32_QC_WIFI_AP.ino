@@ -1,3 +1,17 @@
+/*
+ * ------------------------------------------------------------------------
+ * AikyaNova Labs Embedded Systems
+ * ------------------------------------------------------------------------
+ * Developed by: AikyaNova Labs
+ * * This firmware is part of the AikyaNova Labs ESP32 Quality Control (QC) 
+ * Testing Suite. It is intended for hardware validation and educational 
+ * purposes.
+ *
+ * Copyright (c) 2025 AikyaNova™
+ * Licensed under the AikyaNova Non-Commercial License.
+ * ------------------------------------------------------------------------
+ */
+
 #include <WiFi.h>
 
 // ---------------------------------------------------------------- //
