@@ -147,11 +147,11 @@ Tip: If you are unsure which chip your board uses, look at the small square blac
   <img src="Images/CP 210x.png" width="300" alt="CP 210x">
 </p>
 
-- Connect the ESP32 to your PC/Laptop by a USB Type C Data Cable.
+- Connect the ESP32 to your PC/Laptop by a USB Type C **Data** Cable.
 - Right click on the `Windows button` and go to `Device Manager > Ports`.
 
 <p align="center">
-  <img src="Images/Device Manager.png" width="600" alt="Device Manager">
+  <img src="Images/Device Manager.png" width="250" alt="Device Manager">
 </p>
 
 - Select `CP2102 USB to UART Bridge Controller` > `Brower for drivers on your computer`, locate the driver file and click on `OK`.
