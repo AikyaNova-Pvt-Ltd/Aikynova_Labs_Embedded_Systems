@@ -113,16 +113,16 @@ To run the firmware tests (Phase 2), you must set up your software environment. 
    - Install the "esp32 by Espressif Systems" package Version: `2.0.17` as it the stable version.
   
 <p align="center">
-  <img src="Images/IDE Board Manager.png" width="600" alt="Board Manager">
+  <img src="Images/IDE Board Manager.png" width="400" alt="Board Manager">
     &nbsp; &nbsp;
-  <img src="Images/IDE Board Installation.png" width="600" alt="Board Installation">
+  <img src="Images/IDE Board Installation.png" width="400" alt="Board Installation">
 </p>
     
 4. **Select Board & Port** 🔌
    - Board: Go to `Tools > Board > ESP Arduino/esp3 > ESP32 Dev Module`.
      
 <p align="center">
-  <img src="Images/IDE Tools.png" width="600" alt="Tools">
+  <img src="Images/IDE Tools.png" width="400" alt="Tools">
 </p>
 
    - Port: Go to `Tools > Port` and select the COM/USB port where ESP32 is connected.
