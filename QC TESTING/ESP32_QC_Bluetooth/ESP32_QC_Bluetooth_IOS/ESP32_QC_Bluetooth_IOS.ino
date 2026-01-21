@@ -1,3 +1,17 @@
+/*
+ * ------------------------------------------------------------------------
+ * AikyaNova Labs Embedded Systems
+ * ------------------------------------------------------------------------
+ * Developed by: AikyaNova Labs
+ * * This firmware is part of the AikyaNova Labs ESP32 Quality Control (QC) 
+ * Testing Suite. It is intended for hardware validation and educational 
+ * purposes.
+ *
+ * Copyright (c) 2025 AikyaNova™
+ * Licensed under the AikyaNova Non-Commercial License.
+ * ------------------------------------------------------------------------
+ */
+
 #include <BLEDevice.h>
 #include <BLEUtils.h>
 #include <BLEServer.h>
@@ -30,7 +44,6 @@ class MyServerCallbacks: public BLEServerCallbacks {
 // Setup callbacks to handle incoming data (Writing to the ESP32)
 class MyCallbacks: public BLECharacteristicCallbacks {
     void onWrite(BLECharacteristic *pCharacteristic) {
-      // FIX: specific conversion to Arduino String using .c_str()
       String value = pCharacteristic->getValue().c_str();
 
       if (value.length() > 0) {

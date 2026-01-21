@@ -92,7 +92,7 @@ To run the firmware tests (Phase 2), you must set up your software environment. 
    - Download and install the latest Arduino IDE for your OS (Windows, macOS or Linux) from:
    `https://www.arduino.cc/en/software
    - Agree to the terms and conditions and install in the default loaction. Click on Finish to complete the installation process.
-   - Install the driver softwares.
+   - Install the driver softwares if asked by the system.
   
 <p align="center">
   <img src="Images/IDE Installation.png" width="600" alt="Installation">
@@ -110,28 +110,25 @@ To run the firmware tests (Phase 2), you must set up your software environment. 
 3. **Install ESP32 Board Support** 📦
    - Go to Tools > Board > Boards Manager.
    - Search for "esp32".
-   - Install the "esp32 by Espressif Systems" package
+   - Install the "esp32 by Espressif Systems" package Version: `2.0.17` as it the stable version.
   
 <p align="center">
-  <img src="Images/IDE Board Manager.png" width="600" alt="Board Manager">
+  <img src="Images/IDE Board Manager.png" width="400" alt="Board Manager">
     &nbsp; &nbsp;
-  <img src="Images/IDE Board Installation.png" width="600" alt="Board Installation">
+  <img src="Images/IDE Board Installation.png" width="400" alt="Board Installation">
 </p>
     
 4. **Select Board & Port** 🔌
-   - Board: Go to Tools > Board > ESP Arduino/esp3 > ESP32 Dev Module
+   - Board: Go to `Tools > Board > ESP Arduino/esp3 > ESP32 Dev Module`.
      
 <p align="center">
-  <img src="Images/IDE Tools.png" width="600" alt="Tools">
+  <img src="Images/IDE Tools.png" width="400" alt="Tools">
 </p>
 
-   - Port: Go to Tools > Port and select the COM/USB port where ESP32 is connected
-
-<p align="center">
-  <img src="Images/IDE Port.png" width="600" alt="Port">
-</p>
-  
-   - Upload Speed: 921600 (recommended) or 115200
+   - Port: Go to `Tools > Port` and select the COM/USB port where ESP32 is connected.
+   - `Tools > Partition Scheme > Huge APP (3MB no OTA/1MB SPIFFS)`.
+   - `Tools > Erase All Flash Before Sketch Upload > Enable`.
+   - Upload Speed: `921600` (recommended) or `115200`.
    
 ## 🔌 USB Driver Installation
 If your computer does not recognize the board (no COM port appears), you likely need to install the USB-to-UART bridge driver.
@@ -144,8 +141,24 @@ If your computer does not recognize the board (no COM port appears), you likely 
 Tip: If you are unsure which chip your board uses, look at the small square black chip near the USB port. The text on it will usually say CP2102 or CP2104.
 
 <p align="center">
-  <img src="Images/CP 210x.png" width="300" alt="CP 210x">
+  <img src="Images/CP 210x.png" width="200" alt="CP 210x">
 </p>
+
+- Connect the ESP32 to your PC/Laptop by a USB Type C **Data** Cable.
+- Right click on the `Windows button` and go to `Device Manager > Ports`.
+
+<p align="center">
+  <img src="Images/Device Manager.png" width="250" alt="Device Manager">
+</p>
+
+- Select `CP2102 USB to UART Bridge Controller` > `Brower for drivers on your computer`, locate the driver file and click on `OK`.
+
+<p align="center">
+  <img src="Images/Browse Manager.png" width="600" alt="Driver File">
+</p>
+
+- Windows will update your drivers and you can see `Silicon Labs CP210x USB to UART Bridge (COMxx)` under `Ports (COM & LPT)`.
+- Now go to Arduini IDE, `Tools > Port > COMxx`.
 
 ## 📂 Included Test Firmware
 
