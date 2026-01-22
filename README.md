@@ -1,4 +1,4 @@
-# Welcome to Aikynova_Labs_Embedded_Systems repository
+# Welcome to Aikyanova_Labs_Embedded_Systems repository
 
 ## Clone the Repository
 
